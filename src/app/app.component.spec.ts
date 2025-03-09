@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'barber-front-angular' title`, () => {
+  it(`should have the 'barber-shop-ui' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('barber-front-angular');
+    expect(app.title).toEqual('barber-shop-ui');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, barber-front-angular');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, barber-shop-ui');
   });
 });
